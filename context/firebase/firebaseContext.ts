@@ -1,5 +1,14 @@
 import {createContext} from 'react';
+import {MenuItem} from '../../types';
 
-const FirebaseContext = createContext();
+type InitialContext = {
+  menu: [] | MenuItem[];
+  getProducts: () => void;
+};
+
+const FirebaseContext = createContext<InitialContext>({
+  menu: [],
+  getProducts: () => {},
+});
 
 export default FirebaseContext;

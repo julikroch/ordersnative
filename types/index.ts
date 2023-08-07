@@ -1,3 +1,4 @@
+//firebase
 export const GET_PRODUCTS_SUCCESS = 'GET_PRODUCTS_SUCCESS';
 
 export type MenuItem = {
@@ -11,3 +12,6 @@ export type MenuItem = {
 export type Menu = {
   menu: [] | MenuItem[];
 };
+
+//orders
+export const SELECT_PRODUCT = 'SELECT_PRODUCT';
